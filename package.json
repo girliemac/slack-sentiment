@@ -1,0 +1,25 @@
+{
+  "name": "slack-sentiment",
+  "version": "1.0.0",
+  "description": "Slackbot: Sentiment analysis for Slack messages",
+  "main": "index.js",
+  "scripts": {
+    "start": "nf start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bot",
+    "ai",
+    "watson",
+    "slack",
+    "slackbot"
+  ],
+  "author": "Tomomi Imura",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.0",
+    "express": "^4.15.0",
+    "request": "^2.80.0",
+    "watson-developer-cloud": "^2.25.0"
+  }
+}
