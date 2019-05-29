@@ -1,14 +1,17 @@
-# Sentiment Analysis Slack chat Bot
+# Sentiment Analysis Slack Bot
 
 Have you ever wonder how your Slack chat message is perceived by other users? You may sounds unpleasant, or have harsh tones that you may not have noticed! In this tutorial, I am walking you through to build a Slack bot that analyze the tone of messages using IBM Watson Watson to read the emotion of each message posted!
 
-![Slack Watson Raspberry Pi Bot](https://github.com/girliemac/slack-sentiment/blob/master/pi-bot.gif)
+![Slack Watson Raspberry Pi Bot](https://github.com/girliemac/slack-sentiment/blob/master/pi-bot.gif?raw=true)
 
 ## Running on Your Own
 
 ### Prerequisites
 
-You need an [IBM Bluemix](https://console.ng.bluemix.net) account and add the [Watson Tone Analyzer](https://console.ng.bluemix.net/services/tone_analyzer/cbe7a324-0794-46d3-a6be-db4e58604273/?paneId=manage). You will be required the service credentials later.
+You need an [IBM Cloud](cloud.ibm.com) account then: 
+1. Go to **Catalog** > **AI** 
+2. Enable **Tone Analyzer**
+3. Get your credentials (API key and URL) by clicking **Service Credentials** then **View credentials**
 
 The second part is totally optional. If you want to build a physical Raspberry Pi bot, you need the hardware:
 
@@ -24,4 +27,4 @@ When you clone this repo run on your own server, rename the `.env-test` file to 
 
 ## Configuring Your Slack App
 
-*I will write the steps down later!*
+Tutorial is on https://api.slack.com/tutorials/watson-sentiment
