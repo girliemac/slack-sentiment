@@ -27,4 +27,4 @@ When you clone this repo run on your own server, rename the `.env-test` file to 
 
 ## Configuring Your Slack App
 
-Tutorial is on https://api.slack.com/tutorials/watson-sentiment
+The full step-by-step tutorial (updated on Jan 23, 2020) is on https://api.slack.com/tutorials/watson-sentiment
