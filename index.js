@@ -1,6 +1,7 @@
 /* *****************************
  * Slack Sentiment Analysis Bot
- *
+ * v3 
+ * Updated: Jan 23, 2020
  * Tomomi Imura (@girlie_mac)
  * *****************************/
 
@@ -29,14 +30,10 @@ app.use(bodyParser.json({ verify: rawBodyBuffer }));
 
 const apiUrl = 'https://slack.com/api';
 
-
-
 /* Handling events */
 
 app.post('/events', (req, res) => {
   
-  const {type, subtype, text, user, channel} = req.body.event;
-
   // App setting validation
   if (req.body.type === 'url_verification') {
     res.send(req.body.challenge);
@@ -52,12 +49,18 @@ app.post('/events', (req, res) => {
       res.sendStatus(200);
     }
     
+    const {bot_id, text, user, channel} = req.body.event;
+    
     if(!text) return;
 
     // Exclude the message from a bot, also slash command
     let regex = /(^\/)/;
-    if(subtype === 'bot_message' || regex.test(text)) return;
-      analyzeTone(text, user, channel);
+    
+    //console.log(req.body.event);
+    if(bot_id || regex.test(text)) return;
+    
+    analyzeTone(text, user, channel);
+    
   }
 });
 
@@ -82,6 +85,7 @@ function analyzeTone(text, user, channel) {
   }
 
   toneAnalyzer.tone({text: text}, (err, result) => {
+    
     if (err) {
       console.log(err);
     } else {
