@@ -5,6 +5,8 @@
  * Tomomi Imura (@girlie_mac)
  * *****************************/
 
+require('dotenv').config();
+
 const express = require('express');
 const app = express();
 
