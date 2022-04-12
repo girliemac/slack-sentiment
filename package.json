@@ -21,7 +21,7 @@
     "express": "^4.16.4",
     "request": "^2.88.0",
     "watson-developer-cloud": "^3.18.4",
-    "axios": "^0.18.0",
+    "axios": ">=0.21.1"
     "qs": "^6.7.0",
     "tsscmp": "^1.0.6",
     "dotenv": "^8.2.0"
