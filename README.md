@@ -1,6 +1,6 @@
 # Sentiment Analysis Slack Bot
 
-Have you ever wonder how your Slack chat message is perceived by other users? You may sounds unpleasant, or have harsh tones that you may not have noticed! In this tutorial, I am walking you through to build a Slack bot that analyze the tone of messages using IBM Watson Watson to read the emotion of each message posted!
+Have you ever wonder how your Slack chat message is perceived by other users? You may sounds unpleasant, or have harsh tones that you may not have noticed! In this tutorial, I am walking you through how to build a Slack bot that analyzes the tone of messages using IBM Watson Watson to read the emotion of each message posted!
 
 ![Slack Watson Raspberry Pi Bot](https://github.com/girliemac/slack-sentiment/blob/master/pi-bot.gif?raw=true)
 
